@@ -10,11 +10,12 @@ import SwiftUI
 struct TrackPlayerView: View {
     let trackInfo : TrackInfo
     @StateObject var previewViewModel = TrackPreviewViewModel()
+    @EnvironmentObject var searchViewModel : SearchViewModel
     
     var body: some View {
         VStack {
             VStack {
-                Text(trackInfo.collectionName)
+                Text(trackInfo.processedTrackName)
                     .fontWeight(.bold)
                     .padding(25)
                 if let image = previewViewModel.image {
@@ -29,7 +30,7 @@ struct TrackPlayerView: View {
             }
       
             VStack(alignment: .leading) {
-                Text(trackInfo.trackName)
+                Text(trackInfo.processedTrackName)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Text(trackInfo.artistName)
@@ -51,7 +52,7 @@ struct TrackPlayerView: View {
                 .buttonStyle(PlainButtonStyle())
                 
                 Button(action: {
-                    
+             
                 }) {
                     Image(systemName: "play.circle.fill")
                         .font(.system(size: 68))
@@ -71,7 +72,8 @@ struct TrackPlayerView: View {
         .background(Color(.backgroundSecondary))
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
         .onAppear {
-            previewViewModel.tryFetchImageByUrl(for: trackInfo.artworkUrl100)
+            previewViewModel.tryFetchImageByUrl(for: trackInfo.processedUrl100)
+            searchViewModel.onAudioTrackSelect(trackInfo: trackInfo)
         }
     }
 }

@@ -10,7 +10,7 @@ import SwiftData
 
 struct TrackSearchView: View {
     @State private var searchText: String = ""
-    @StateObject private var viewModel = SearchViewModel()
+    @StateObject var searchViewModel = SearchViewModel()
     
     @State var isValidString: Bool = false;
     
@@ -18,20 +18,27 @@ struct TrackSearchView: View {
         NavigationView {
             VStack {
                 SearchBarView(searchText: $searchText).onChange(of: searchText) { newValue in
-                    isValidString = viewModel.isValidString(_string: newValue)
+                    isValidString = searchViewModel.isValidString(_string: newValue)
                     if(isValidString){
-                        viewModel.tryFetchTracksByKeyWords(_string: newValue)
+                        searchViewModel.tryFetchTracksByKeyWords(_string: newValue)
                     }
                 }
                 if(isValidString){
-                    if viewModel.isLoading {
+                    if searchViewModel.isLoading {
                         ProgressView()
                             .padding()
                     } else {
-                        SearchResultsView(_tracks: viewModel.tracksInfos, viewModel: viewModel)
+                        SearchResultsView(_tracks: searchViewModel.tracksInfos, errorMessage: searchViewModel.errorMessage)
+                            .environmentObject(searchViewModel)
                     }
                 } else {
-                    RecentSearchesView(_tracks: viewModel.searchModel.resentSearches, viewModel: viewModel)
+                    Button(action: {
+                        searchViewModel.clearAllResentSearches()
+                    }) {
+                        Text("clear all recent seraches")
+                    }
+                    RecentSearchesView(_tracks: searchViewModel.resentSearchModel.resentSearches)
+                        .environmentObject(searchViewModel)
                 }
                 Spacer()
             }
@@ -40,6 +47,7 @@ struct TrackSearchView: View {
         }
         .navigationTitle("Track Search")
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+        
     }
 }
 

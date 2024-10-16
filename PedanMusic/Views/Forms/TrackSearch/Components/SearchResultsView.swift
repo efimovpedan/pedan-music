@@ -9,7 +9,8 @@ import SwiftUI
 
 struct SearchResultsView: View {
     var _tracks: [TrackInfo] = []
-    @ObservedObject var viewModel : SearchViewModel
+    @EnvironmentObject var searchViewModel : SearchViewModel
+    var errorMessage: String?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0.0){
@@ -17,7 +18,13 @@ struct SearchResultsView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding()
-            TracksContainerView(viewModel: viewModel , tracks:_tracks)
+            if let str = errorMessage {
+                Text(str)
+                    .padding()
+            }
+            
+            TracksContainerView(tracks:_tracks)
+                .environmentObject(searchViewModel)
             Spacer()
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
@@ -26,5 +33,5 @@ struct SearchResultsView: View {
 }
 
 #Preview {
-    SearchResultsView(_tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack], viewModel: SearchViewModel())
+    SearchResultsView(_tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack])
 }

@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct TracksContainerView: View {
-    @ObservedObject var viewModel : SearchViewModel
     var tracks: [TrackInfo] = []
+    @EnvironmentObject var searchViewModel : SearchViewModel
     
     var body: some View {
         ScrollView {
             LazyVStack {
                 ForEach(tracks) { track in
-                    TrackPreviewView(trackInfo: track, searchViewModel: viewModel)
+                    TrackPreviewView(trackInfo: track)
+                        .environmentObject(searchViewModel)
                 }
             }
             .padding()
@@ -24,5 +25,5 @@ struct TracksContainerView: View {
 }
     
 #Preview {
-    TracksContainerView(viewModel: SearchViewModel(), tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack])
+    TracksContainerView(tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack])
 }

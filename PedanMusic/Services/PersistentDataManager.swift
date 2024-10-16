@@ -10,9 +10,14 @@ import Foundation
 protocol DataManager {
     func loadRecentSearchesInfos() -> [TrackInfo]
     func saveRecentSearchesInfos(tracksInfos: [TrackInfo])
+    func clearAll()
 }
 
 class PersistentDataManager : DataManager{
+    func clearAll() {
+        clearAllData()
+    }
+    
     func saveRecentSearchesInfos(tracksInfos: [TrackInfo]) {
         saveResentSearches(tracksInfos: tracksInfos)
     }
@@ -45,6 +50,18 @@ class PersistentDataManager : DataManager{
         } catch {
             print("cant load data reason: \(error)")
             return []
+        }
+    }
+    
+    private func clearAllData(){
+        let fileUrl = getDocumentsDirectory().appendingPathComponent(fileName)
+        
+        if FileManager.default.fileExists(atPath: fileUrl.path) {
+            do {
+                try FileManager.default.removeItem(at: fileUrl)
+            } catch {
+                print("cant clear data")
+            }
         }
     }
     

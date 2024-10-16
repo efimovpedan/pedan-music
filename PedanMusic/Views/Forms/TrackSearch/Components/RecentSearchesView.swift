@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RecentSearchesView: View {
     var _tracks: [TrackInfo] = []
-    @ObservedObject var viewModel : SearchViewModel
+    @EnvironmentObject var searchViewModel : SearchViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0.0){
@@ -17,7 +17,8 @@ struct RecentSearchesView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding()
-            TracksContainerView(viewModel: viewModel, tracks: _tracks)
+            TracksContainerView(tracks: _tracks)
+                .environmentObject(searchViewModel)
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
         .padding()
@@ -25,5 +26,5 @@ struct RecentSearchesView: View {
 }
 
 #Preview {
-    RecentSearchesView(_tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack], viewModel: SearchViewModel())
+    RecentSearchesView(_tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack])
 }

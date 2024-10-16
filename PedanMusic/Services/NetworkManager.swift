@@ -22,10 +22,13 @@ class NetworkManager : ObservableObject {
                         return
                     }
                     
-                    if let data = data {
+                    if let jsonData = data {
                         do {
-                            let tracksResponse = try JSONDecoder().decode(TracksResponse.self, from: data)
-                            completion(.success(tracksResponse.results))
+                            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                                print("recieved json: \(jsonString)")
+                            }
+                            let tracksResponse = try JSONDecoder().decode(TracksResponse.self, from: jsonData)
+                            completion(.success(tracksResponse.resultsTracks))
                         } catch {
                             completion(.failure(error))
                         }

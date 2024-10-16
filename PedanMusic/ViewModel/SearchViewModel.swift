@@ -15,11 +15,11 @@ class SearchViewModel : ObservableObject {
     private let dataManager : DataManager
     private let networkManager = NetworkManager ()
     
-    @Published var searchModel : SearchModel
+    @Published var resentSearchModel : ResentSearchModel
     
     init() {
         dataManager = PersistentDataManager()
-        self.searchModel = SearchModel(dataManager: PersistentDataManager())
+        self.resentSearchModel = ResentSearchModel(dataManager: PersistentDataManager())
     }
     
     public func isValidString(_string: String) -> Bool {
@@ -48,9 +48,13 @@ class SearchViewModel : ObservableObject {
     }
     
     public func onAudioTrackSelect(trackInfo : TrackInfo){
-        let result = searchModel.tryAddNewElement(info: trackInfo)
+        let result = resentSearchModel.tryAddNewElement(info: trackInfo)
         if(result){
-            dataManager.saveRecentSearchesInfos(tracksInfos: searchModel.resentSearches)
+            dataManager.saveRecentSearchesInfos(tracksInfos: resentSearchModel.resentSearches)
         }
+    }
+    
+    public func clearAllResentSearches() {
+        dataManager.clearAll()
     }
 }

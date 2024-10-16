@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SearchModel: ObservableObject{
+class ResentSearchModel: ObservableObject{
     @Published var resentSearches : [TrackInfo] = []
     private var dataManager : PersistentDataManager
     

@@ -43,10 +43,6 @@ struct SearchBarView: View {
                         .buttonStyle(PlainButtonStyle())
                     }
                 }
-     
-            
-        //    .frame(alignment: .leading)
-           
         }
     }
 }

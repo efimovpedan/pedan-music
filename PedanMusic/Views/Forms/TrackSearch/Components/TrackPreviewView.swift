@@ -10,10 +10,11 @@ import SwiftUI
 struct TrackPreviewView: View {
     let trackInfo : TrackInfo
     @StateObject var previewViewModel = TrackPreviewViewModel()
-    @ObservedObject var searchViewModel: SearchViewModel
+    @EnvironmentObject var searchViewModel : SearchViewModel
     
     var body: some View {
-        NavigationLink(destination: TrackPlayerView(trackInfo: trackInfo)) {
+        NavigationLink(destination: TrackPlayerView(trackInfo: trackInfo)
+            .environmentObject(searchViewModel)) {
             
             HStack {
                 if let image = previewViewModel.image {
@@ -27,7 +28,7 @@ struct TrackPreviewView: View {
                 }
                 Spacer()
                 VStack {
-                    Text(trackInfo.trackName)
+                    Text(trackInfo.processedTrackName)
                         .font(.system(size: 16))
                         .padding(1)
                         .lineLimit(1)
@@ -44,14 +45,11 @@ struct TrackPreviewView: View {
         }
         .buttonStyle(PlainButtonStyle())
         .onAppear {
-            previewViewModel.tryFetchImageByUrl(for: trackInfo.artworkUrl60)
-        }
-        .onTapGesture {
-            searchViewModel.onAudioTrackSelect(trackInfo: trackInfo)
+            previewViewModel.tryFetchImageByUrl(for: trackInfo.processedUrl60)
         }
     }
 }
 
 #Preview {
-    TrackPreviewView(trackInfo: TrackInfo.TestTrack, searchViewModel: SearchViewModel())
+    TrackPreviewView(trackInfo: TrackInfo.TestTrack)
 }
