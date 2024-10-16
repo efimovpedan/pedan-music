@@ -21,7 +21,7 @@ struct SearchBarView: View {
                             Rectangle()
                                 .fill(Color(.searchBarBackground))
                                 .cornerRadius(8)
-                                .frame(width: 285, height: 30)
+                                .frame(width: 280, height: 30)
                             
                             HStack{
                                 HStack {
@@ -36,7 +36,7 @@ struct SearchBarView: View {
                             
                             .frame(width: 285, height: 30)
                         }
-                        .padding(10)
+                        .padding(5)
                         Button("Cancel"){
                             searchText = ""
                         }

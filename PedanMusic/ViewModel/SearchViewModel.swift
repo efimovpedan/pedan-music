@@ -32,7 +32,7 @@ class SearchViewModel : ObservableObject {
         isLoading = true;
         errorMessage = nil;
         
-        networkManager.FetchTracks(searchTerm: _string) { [weak self] result in
+        NetworkManager.FetchTracksInfo(searchTerm: _string) { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false;
                 

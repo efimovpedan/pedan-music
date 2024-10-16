@@ -9,10 +9,12 @@ import Foundation
 import UIKit
 
 class NetworkManager : ObservableObject {
-    private let imagesQueue = DispatchQueue(label: "com.pedanMusic.imageLoader", attributes: .concurrent)
-    private let semaphore = DispatchSemaphore(value: 15)
+    static let shared = NetworkManager()
     
-    func FetchTracks(searchTerm: String, completion: @escaping(Result<[TrackInfo], Error>) -> Void) {
+    private static let imagesQueue = DispatchQueue(label: "com.pedanMusic.imageLoader", attributes: .concurrent)
+    private static let semaphore = DispatchSemaphore(value: 15)
+    
+    static func FetchTracksInfo(searchTerm: String, completion: @escaping(Result<[TrackInfo], Error>) -> Void) {
         if let url = URL(string: "https://itunes.apple.com/search?term=\(searchTerm)") {
             
             DispatchQueue.global(qos: .background).async {
@@ -24,9 +26,9 @@ class NetworkManager : ObservableObject {
                     
                     if let jsonData = data {
                         do {
-                          /*  if let jsonString = String(data: jsonData, encoding: .utf8) {
-                                print("recieved json: \(jsonString)")
-                            }*/
+                            /*  if let jsonString = String(data: jsonData, encoding: .utf8) {
+                             print("recieved json: \(jsonString)")
+                             }*/
                             let tracksResponse = try JSONDecoder().decode(TracksResponse.self, from: jsonData)
                             completion(.success(tracksResponse.results))
                         } catch {
@@ -40,16 +42,15 @@ class NetworkManager : ObservableObject {
         }
     }
     
-    func FetchImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
-        imagesQueue.async {
-            self.semaphore.wait()
-            guard let url = URL(string: urlString) else {
-                completion(nil)
-                self.semaphore.signal()
-                return
-            }
-            
-            DispatchQueue.global(qos: .background).async {
+    static func FetchImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
+        DispatchQueue.global(qos: .background).async {
+            imagesQueue.async {
+                self.semaphore.wait()
+                guard let url = URL(string: urlString) else {
+                    completion(nil)
+                    self.semaphore.signal()
+                    return
+                }
                 let task = URLSession.shared.dataTask(with: url) { data, responce, error in defer { self.semaphore.signal()}
                     if let data = data, let image = UIImage(data: data) {
                         completion(image)
@@ -61,5 +62,4 @@ class NetworkManager : ObservableObject {
             }
         }
     }
-    
 }

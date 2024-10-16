@@ -33,10 +33,10 @@ struct TrackSearchView: View {
                     }
                 } else {
                     /*Button(action: {
-                        searchViewModel.clearAllResentSearches()
-                    }) {
-                        Text("clear all recent seraches")
-                    }*/
+                     searchViewModel.clearAllResentSearches()
+                     }) {
+                     Text("clear all recent seraches")
+                     }*/
                     RecentSearchesView(_tracks: searchViewModel.resentSearchModel.resentSearches)
                         .environmentObject(searchViewModel)
                 }

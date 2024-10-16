@@ -29,7 +29,7 @@ struct TrackPlayerView: View {
                         .frame(width: 320, height: 320)
                 }
             }
-      
+            
             VStack(alignment: .leading) {
                 Text(trackInfo.processedTrackName)
                     .font(.title)
@@ -38,7 +38,7 @@ struct TrackPlayerView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(Color.gray)
-          
+                
             }
             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 100, maxWidth: .infinity, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
             .padding(25)
@@ -53,7 +53,7 @@ struct TrackPlayerView: View {
                 .buttonStyle(PlainButtonStyle())
                 
                 Button(action: {
-             
+                    
                 }) {
                     Image(systemName: "play.circle.fill")
                         .font(.system(size: 68))
