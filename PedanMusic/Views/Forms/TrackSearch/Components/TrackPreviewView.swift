@@ -52,4 +52,5 @@ struct TrackPreviewView: View {
 
 #Preview {
     TrackPreviewView(trackInfo: TrackInfo.TestTrack)
+        .environmentObject(SearchViewModel())
 }

@@ -27,4 +27,5 @@ struct RecentSearchesView: View {
 
 #Preview {
     RecentSearchesView(_tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack])
+        .environmentObject(SearchViewModel())
 }

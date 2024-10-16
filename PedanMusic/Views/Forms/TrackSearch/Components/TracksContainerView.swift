@@ -28,4 +28,5 @@ struct TracksContainerView: View {
     
 #Preview {
     TracksContainerView(tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack])
+        .environmentObject(SearchViewModel())
 }

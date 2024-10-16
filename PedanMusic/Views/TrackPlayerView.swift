@@ -80,4 +80,5 @@ struct TrackPlayerView: View {
 
 #Preview {
     TrackPlayerView(trackInfo: TrackInfo.TestTrack)
+        .environmentObject(SearchViewModel())
 }

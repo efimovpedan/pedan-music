@@ -29,4 +29,5 @@ struct SearchResultsView: View {
 
 #Preview {
     SearchResultsView(_tracks: [TrackInfo.TestTrack, TrackInfo.TestTrack])
+        .environmentObject(SearchViewModel())
 }
