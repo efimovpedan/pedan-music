@@ -8,7 +8,7 @@
 import Foundation
 
 class SearchViewModel : ObservableObject {
-    @Published var tracksInfos: [TrackInfo] = []
+    @Published var foundTracks: [TrackInfo] = []
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     
@@ -38,7 +38,7 @@ class SearchViewModel : ObservableObject {
                 
                 switch result {
                 case .success(let tracks):
-                    self?.tracksInfos = tracks
+                    self?.foundTracks = tracks
                 case .failure(let error):
                     self?.errorMessage = error.localizedDescription
                     print(error.localizedDescription)

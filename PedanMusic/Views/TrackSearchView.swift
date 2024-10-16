@@ -17,10 +17,10 @@ struct TrackSearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                SearchBarView(searchText: $searchText).onChange(of: searchText) { newValue in
-                    isValidString = searchViewModel.isValidString(_string: newValue)
+                SearchBarView(searchText: $searchText).onChange(of: searchText) {
+                    isValidString = searchViewModel.isValidString(_string: searchText)
                     if(isValidString){
-                        searchViewModel.tryFetchTracksByKeyWords(_string: newValue)
+                        searchViewModel.tryFetchTracksByKeyWords(_string: searchText)
                     }
                 }
                 if(isValidString){
@@ -28,7 +28,7 @@ struct TrackSearchView: View {
                         ProgressView()
                             .padding()
                     } else {
-                        SearchResultsView(_tracks: searchViewModel.tracksInfos)
+                        SearchResultsView(_tracks: searchViewModel.foundTracks)
                             .environmentObject(searchViewModel)
                     }
                 } else {

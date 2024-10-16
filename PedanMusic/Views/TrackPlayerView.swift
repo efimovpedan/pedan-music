@@ -21,25 +21,26 @@ struct TrackPlayerView: View {
                 if let image = previewViewModel.image {
                     Image(uiImage: image)
                         .resizable()
-                        .frame(width: 343, height: 343)
+                        .frame(width: 320, height: 320)
                         .aspectRatio(contentMode: .fill)
                         .clipped()
                 } else {
                     ProgressView()
+                        .frame(width: 320, height: 320)
                 }
             }
       
             VStack(alignment: .leading) {
                 Text(trackInfo.processedTrackName)
-                    .font(.largeTitle)
+                    .font(.title)
                     .fontWeight(.bold)
                 Text(trackInfo.artistName)
-                    .font(.title)
+                    .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(Color.gray)
           
             }
-            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 100, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: .zero, alignment: .leading)
+            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: 100, maxWidth: .infinity, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
             .padding(25)
             
             HStack {

@@ -24,9 +24,9 @@ class NetworkManager : ObservableObject {
                     
                     if let jsonData = data {
                         do {
-                            if let jsonString = String(data: jsonData, encoding: .utf8) {
+                          /*  if let jsonString = String(data: jsonData, encoding: .utf8) {
                                 print("recieved json: \(jsonString)")
-                            }
+                            }*/
                             let tracksResponse = try JSONDecoder().decode(TracksResponse.self, from: jsonData)
                             completion(.success(tracksResponse.results))
                         } catch {
