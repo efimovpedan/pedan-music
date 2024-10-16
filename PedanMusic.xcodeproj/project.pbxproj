@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		955529DD2CB3BDBA00D38799 /* TrackPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955529DC2CB3BDBA00D38799 /* TrackPreviewView.swift */; };
+		955529DF2CB3C18900D38799 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955529DE2CB3C18900D38799 /* TrackModel.swift */; };
+		955529E22CB3DE4D00D38799 /* TracksContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955529E12CB3DE4D00D38799 /* TracksContainerView.swift */; };
+		957069F82CBE55100070AF2B /* TrackPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957069F72CBE55100070AF2B /* TrackPreviewViewModel.swift */; };
+		957069FA2CBE69EC0070AF2B /* PersistentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957069F92CBE69EC0070AF2B /* PersistentDataManager.swift */; };
+		958283C52CAD5518004591D3 /* PedanMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958283C42CAD5518004591D3 /* PedanMusicApp.swift */; };
+		958283C72CAD5518004591D3 /* TrackSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958283C62CAD5518004591D3 /* TrackSearchView.swift */; };
+		958283CB2CAD5519004591D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958283CA2CAD5519004591D3 /* Assets.xcassets */; };
+		958283CE2CAD5519004591D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958283CD2CAD5519004591D3 /* Preview Assets.xcassets */; };
+		958283D82CAD5519004591D3 /* PedanMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958283D72CAD5519004591D3 /* PedanMusicTests.swift */; };
+		958283E22CAD5519004591D3 /* PedanMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958283E12CAD5519004591D3 /* PedanMusicUITests.swift */; };
+		958283E42CAD5519004591D3 /* PedanMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958283E32CAD5519004591D3 /* PedanMusicUITestsLaunchTests.swift */; };
+		958A2D152CAE71AB00A174B3 /* TrackPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2D142CAE71AB00A174B3 /* TrackPlayerView.swift */; };
+		958A2D1C2CAE7FE300A174B3 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2D1B2CAE7FE300A174B3 /* SearchBarView.swift */; };
+		958A2D1E2CAE8E7900A174B3 /* RecentSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2D1D2CAE8E7900A174B3 /* RecentSearchesView.swift */; };
+		958A2D202CAE8FF600A174B3 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2D1F2CAE8FF600A174B3 /* SearchResultsView.swift */; };
+		958A2D232CAE931600A174B3 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2D222CAE931600A174B3 /* SearchModel.swift */; };
+		958A2D252CAE933800A174B3 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2D242CAE933800A174B3 /* SearchViewModel.swift */; };
+		959F32A42CBC8CE200054F89 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959F32A32CBC8CE200054F89 /* NetworkManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		958283D42CAD5519004591D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 958283B92CAD5518004591D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 958283C02CAD5518004591D3;
+			remoteInfo = PedanMusic;
+		};
+		958283DE2CAD5519004591D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 958283B92CAD5518004591D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 958283C02CAD5518004591D3;
+			remoteInfo = PedanMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		955529DC2CB3BDBA00D38799 /* TrackPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPreviewView.swift; sourceTree = "<group>"; };
+		955529DE2CB3C18900D38799 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		955529E12CB3DE4D00D38799 /* TracksContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksContainerView.swift; sourceTree = "<group>"; };
+		957069F72CBE55100070AF2B /* TrackPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPreviewViewModel.swift; sourceTree = "<group>"; };
+		957069F92CBE69EC0070AF2B /* PersistentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentDataManager.swift; sourceTree = "<group>"; };
+		958283C12CAD5518004591D3 /* PedanMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedanMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		958283C42CAD5518004591D3 /* PedanMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedanMusicApp.swift; sourceTree = "<group>"; };
+		958283C62CAD5518004591D3 /* TrackSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSearchView.swift; sourceTree = "<group>"; };
+		958283CA2CAD5519004591D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		958283CD2CAD5519004591D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		958283D32CAD5519004591D3 /* PedanMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedanMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		958283D72CAD5519004591D3 /* PedanMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedanMusicTests.swift; sourceTree = "<group>"; };
+		958283DD2CAD5519004591D3 /* PedanMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedanMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		958283E12CAD5519004591D3 /* PedanMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedanMusicUITests.swift; sourceTree = "<group>"; };
+		958283E32CAD5519004591D3 /* PedanMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedanMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		958A2D142CAE71AB00A174B3 /* TrackPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPlayerView.swift; sourceTree = "<group>"; };
+		958A2D1B2CAE7FE300A174B3 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		958A2D1D2CAE8E7900A174B3 /* RecentSearchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesView.swift; sourceTree = "<group>"; };
+		958A2D1F2CAE8FF600A174B3 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
+		958A2D222CAE931600A174B3 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		958A2D242CAE933800A174B3 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		959F32A32CBC8CE200054F89 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		958283BE2CAD5518004591D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958283D02CAD5519004591D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958283DA2CAD5519004591D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		958283B82CAD5518004591D3 = {
+			isa = PBXGroup;
+			children = (
+				958283C32CAD5518004591D3 /* PedanMusic */,
+				958283D62CAD5519004591D3 /* PedanMusicTests */,
+				958283E02CAD5519004591D3 /* PedanMusicUITests */,
+				958283C22CAD5518004591D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		958283C22CAD5518004591D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				958283C12CAD5518004591D3 /* PedanMusic.app */,
+				958283D32CAD5519004591D3 /* PedanMusicTests.xctest */,
+				958283DD2CAD5519004591D3 /* PedanMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		958283C32CAD5518004591D3 /* PedanMusic */ = {
+			isa = PBXGroup;
+			children = (
+				959F32A22CBC8C9400054F89 /* Services */,
+				958A2D192CAE774700A174B3 /* ViewModel */,
+				958A2D182CAE773900A174B3 /* Models */,
+				958A2D162CAE770000A174B3 /* Views */,
+				958283C42CAD5518004591D3 /* PedanMusicApp.swift */,
+				958283CA2CAD5519004591D3 /* Assets.xcassets */,
+				958283CC2CAD5519004591D3 /* Preview Content */,
+			);
+			path = PedanMusic;
+			sourceTree = "<group>";
+		};
+		958283CC2CAD5519004591D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				958283CD2CAD5519004591D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		958283D62CAD5519004591D3 /* PedanMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				958283D72CAD5519004591D3 /* PedanMusicTests.swift */,
+			);
+			path = PedanMusicTests;
+			sourceTree = "<group>";
+		};
+		958283E02CAD5519004591D3 /* PedanMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				958283E12CAD5519004591D3 /* PedanMusicUITests.swift */,
+				958283E32CAD5519004591D3 /* PedanMusicUITestsLaunchTests.swift */,
+			);
+			path = PedanMusicUITests;
+			sourceTree = "<group>";
+		};
+		958A2D162CAE770000A174B3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				958A2D172CAE772000A174B3 /* Forms */,
+				958A2D142CAE71AB00A174B3 /* TrackPlayerView.swift */,
+				958283C62CAD5518004591D3 /* TrackSearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		958A2D172CAE772000A174B3 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				958A2D1A2CAE7E0500A174B3 /* TrackSearch */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		958A2D182CAE773900A174B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				958A2D222CAE931600A174B3 /* SearchModel.swift */,
+				955529DE2CB3C18900D38799 /* TrackModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		958A2D192CAE774700A174B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				958A2D242CAE933800A174B3 /* SearchViewModel.swift */,
+				957069F72CBE55100070AF2B /* TrackPreviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		958A2D1A2CAE7E0500A174B3 /* TrackSearch */ = {
+			isa = PBXGroup;
+			children = (
+				958A2D212CAE91B500A174B3 /* Components */,
+			);
+			path = TrackSearch;
+			sourceTree = "<group>";
+		};
+		958A2D212CAE91B500A174B3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				958A2D1D2CAE8E7900A174B3 /* RecentSearchesView.swift */,
+				958A2D1F2CAE8FF600A174B3 /* SearchResultsView.swift */,
+				958A2D1B2CAE7FE300A174B3 /* SearchBarView.swift */,
+				955529DC2CB3BDBA00D38799 /* TrackPreviewView.swift */,
+				955529E12CB3DE4D00D38799 /* TracksContainerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		959F32A22CBC8C9400054F89 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				959F32A32CBC8CE200054F89 /* NetworkManager.swift */,
+				957069F92CBE69EC0070AF2B /* PersistentDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		958283C02CAD5518004591D3 /* PedanMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958283E72CAD5519004591D3 /* Build configuration list for PBXNativeTarget "PedanMusic" */;
+			buildPhases = (
+				958283BD2CAD5518004591D3 /* Sources */,
+				958283BE2CAD5518004591D3 /* Frameworks */,
+				958283BF2CAD5518004591D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PedanMusic;
+			productName = PedanMusic;
+			productReference = 958283C12CAD5518004591D3 /* PedanMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		958283D22CAD5519004591D3 /* PedanMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958283EA2CAD5519004591D3 /* Build configuration list for PBXNativeTarget "PedanMusicTests" */;
+			buildPhases = (
+				958283CF2CAD5519004591D3 /* Sources */,
+				958283D02CAD5519004591D3 /* Frameworks */,
+				958283D12CAD5519004591D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				958283D52CAD5519004591D3 /* PBXTargetDependency */,
+			);
+			name = PedanMusicTests;
+			productName = PedanMusicTests;
+			productReference = 958283D32CAD5519004591D3 /* PedanMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		958283DC2CAD5519004591D3 /* PedanMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958283ED2CAD5519004591D3 /* Build configuration list for PBXNativeTarget "PedanMusicUITests" */;
+			buildPhases = (
+				958283D92CAD5519004591D3 /* Sources */,
+				958283DA2CAD5519004591D3 /* Frameworks */,
+				958283DB2CAD5519004591D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				958283DF2CAD5519004591D3 /* PBXTargetDependency */,
+			);
+			name = PedanMusicUITests;
+			productName = PedanMusicUITests;
+			productReference = 958283DD2CAD5519004591D3 /* PedanMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		958283B92CAD5518004591D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					958283C02CAD5518004591D3 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					958283D22CAD5519004591D3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 958283C02CAD5518004591D3;
+					};
+					958283DC2CAD5519004591D3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 958283C02CAD5518004591D3;
+					};
+				};
+			};
+			buildConfigurationList = 958283BC2CAD5518004591D3 /* Build configuration list for PBXProject "PedanMusic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 958283B82CAD5518004591D3;
+			productRefGroup = 958283C22CAD5518004591D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				958283C02CAD5518004591D3 /* PedanMusic */,
+				958283D22CAD5519004591D3 /* PedanMusicTests */,
+				958283DC2CAD5519004591D3 /* PedanMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		958283BF2CAD5518004591D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958283CE2CAD5519004591D3 /* Preview Assets.xcassets in Resources */,
+				958283CB2CAD5519004591D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958283D12CAD5519004591D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958283DB2CAD5519004591D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		958283BD2CAD5518004591D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959F32A42CBC8CE200054F89 /* NetworkManager.swift in Sources */,
+				957069F82CBE55100070AF2B /* TrackPreviewViewModel.swift in Sources */,
+				955529DD2CB3BDBA00D38799 /* TrackPreviewView.swift in Sources */,
+				957069FA2CBE69EC0070AF2B /* PersistentDataManager.swift in Sources */,
+				958A2D1E2CAE8E7900A174B3 /* RecentSearchesView.swift in Sources */,
+				958A2D202CAE8FF600A174B3 /* SearchResultsView.swift in Sources */,
+				955529DF2CB3C18900D38799 /* TrackModel.swift in Sources */,
+				955529E22CB3DE4D00D38799 /* TracksContainerView.swift in Sources */,
+				958A2D252CAE933800A174B3 /* SearchViewModel.swift in Sources */,
+				958A2D1C2CAE7FE300A174B3 /* SearchBarView.swift in Sources */,
+				958283C72CAD5518004591D3 /* TrackSearchView.swift in Sources */,
+				958A2D232CAE931600A174B3 /* SearchModel.swift in Sources */,
+				958A2D152CAE71AB00A174B3 /* TrackPlayerView.swift in Sources */,
+				958283C52CAD5518004591D3 /* PedanMusicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958283CF2CAD5519004591D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958283D82CAD5519004591D3 /* PedanMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958283D92CAD5519004591D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958283E22CAD5519004591D3 /* PedanMusicUITests.swift in Sources */,
+				958283E42CAD5519004591D3 /* PedanMusicUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		958283D52CAD5519004591D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 958283C02CAD5518004591D3 /* PedanMusic */;
+			targetProxy = 958283D42CAD5519004591D3 /* PBXContainerItemProxy */;
+		};
+		958283DF2CAD5519004591D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 958283C02CAD5518004591D3 /* PedanMusic */;
+			targetProxy = 958283DE2CAD5519004591D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		958283E52CAD5519004591D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		958283E62CAD5519004591D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		958283E82CAD5519004591D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PedanMusic/Preview Content\"";
+				DEVELOPMENT_TEAM = K7NDRZ3C7H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedan.PedanMusic.PedanMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		958283E92CAD5519004591D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PedanMusic/Preview Content\"";
+				DEVELOPMENT_TEAM = K7NDRZ3C7H;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedan.PedanMusic.PedanMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		958283EB2CAD5519004591D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7NDRZ3C7H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedan.PedanMusic.PedanMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PedanMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PedanMusic";
+			};
+			name = Debug;
+		};
+		958283EC2CAD5519004591D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7NDRZ3C7H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedan.PedanMusic.PedanMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PedanMusic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PedanMusic";
+			};
+			name = Release;
+		};
+		958283EE2CAD5519004591D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7NDRZ3C7H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedan.PedanMusic.PedanMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PedanMusic;
+			};
+			name = Debug;
+		};
+		958283EF2CAD5519004591D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K7NDRZ3C7H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pedan.PedanMusic.PedanMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PedanMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		958283BC2CAD5518004591D3 /* Build configuration list for PBXProject "PedanMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958283E52CAD5519004591D3 /* Debug */,
+				958283E62CAD5519004591D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		958283E72CAD5519004591D3 /* Build configuration list for PBXNativeTarget "PedanMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958283E82CAD5519004591D3 /* Debug */,
+				958283E92CAD5519004591D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		958283EA2CAD5519004591D3 /* Build configuration list for PBXNativeTarget "PedanMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958283EB2CAD5519004591D3 /* Debug */,
+				958283EC2CAD5519004591D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		958283ED2CAD5519004591D3 /* Build configuration list for PBXNativeTarget "PedanMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958283EE2CAD5519004591D3 /* Debug */,
+				958283EF2CAD5519004591D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 958283B92CAD5518004591D3 /* Project object */;
+}
