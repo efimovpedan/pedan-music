@@ -28,7 +28,7 @@ class NetworkManager : ObservableObject {
                                 print("recieved json: \(jsonString)")
                             }
                             let tracksResponse = try JSONDecoder().decode(TracksResponse.self, from: jsonData)
-                            completion(.success(tracksResponse.resultsTracks))
+                            completion(.success(tracksResponse.results))
                         } catch {
                             completion(.failure(error))
                         }

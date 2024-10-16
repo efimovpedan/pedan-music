@@ -10,7 +10,6 @@ import SwiftUI
 struct SearchResultsView: View {
     var _tracks: [TrackInfo] = []
     @EnvironmentObject var searchViewModel : SearchViewModel
-    var errorMessage: String?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0.0){
@@ -18,10 +17,6 @@ struct SearchResultsView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding()
-            if let str = errorMessage {
-                Text(str)
-                    .padding()
-            }
             
             TracksContainerView(tracks:_tracks)
                 .environmentObject(searchViewModel)

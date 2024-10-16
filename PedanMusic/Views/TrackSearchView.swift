@@ -28,15 +28,15 @@ struct TrackSearchView: View {
                         ProgressView()
                             .padding()
                     } else {
-                        SearchResultsView(_tracks: searchViewModel.tracksInfos, errorMessage: searchViewModel.errorMessage)
+                        SearchResultsView(_tracks: searchViewModel.tracksInfos)
                             .environmentObject(searchViewModel)
                     }
                 } else {
-                    Button(action: {
+                    /*Button(action: {
                         searchViewModel.clearAllResentSearches()
                     }) {
                         Text("clear all recent seraches")
-                    }
+                    }*/
                     RecentSearchesView(_tracks: searchViewModel.resentSearchModel.resentSearches)
                         .environmentObject(searchViewModel)
                 }

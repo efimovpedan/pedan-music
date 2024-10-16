@@ -11,6 +11,9 @@ struct TrackInfo: Codable, Identifiable {
     static let TestTrack = TrackInfo(wrapperType: "track", artistName: "long_long_long_artist_name", collectionName: "long colection name", kind: "song", trackId: 0, trackName: "track name", artworkUrl100: "https://picsum.photos/200", artworkUrl60: "https://picsum.photos/200", previewUrl: "")
     
     var id: String { trackId == nil ? UUID().uuidString : String(trackId!)}
+    var processedWrapperType : WrapperType? {
+        return WrapperType(rawValue: wrapperType)
+    }
     let wrapperType : String
     var artistName : String
     var collectionName : String
@@ -32,11 +35,14 @@ struct TrackInfo: Codable, Identifiable {
         artworkUrl60 ?? ""
     }
     var previewUrl : String?
+}
 
-    
+enum WrapperType: String {
+    case audiobook
+    case track
 }
 
 struct TracksResponse: Decodable {
     let resultCount : Int
-    let resultsTracks : [TrackInfo]
+    let results : [TrackInfo]
 }

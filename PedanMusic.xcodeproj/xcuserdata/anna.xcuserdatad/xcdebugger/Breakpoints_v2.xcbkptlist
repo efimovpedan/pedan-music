@@ -234,8 +234,8 @@
             filePath = "PedanMusic/Services/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "FetchTracks(searchTerm:completion:)"
             landmarkType = "7">
             <Locations>
@@ -282,8 +282,8 @@
             filePath = "PedanMusic/Services/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "FetchTracks(searchTerm:completion:)"
             landmarkType = "7">
             <Locations>
@@ -346,13 +346,13 @@
             filePath = "PedanMusic/Services/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "FetchTracks(searchTerm:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "073F639B-F603-4E33-AE10-E26487119E55 - 23e01c8dab653a9"
+                  uuid = "073F639B-F603-4E33-AE10-E26487119E55 - 23e01c8dab652c0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -362,12 +362,12 @@
                   urlString = "file:///Users/anna/Documents/projects/PedanMusic/PedanMusic/Services/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "408">
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1684">
                </Location>
                <Location
-                  uuid = "073F639B-F603-4E33-AE10-E26487119E55 - 23e01c8dab6524c"
+                  uuid = "073F639B-F603-4E33-AE10-E26487119E55 - 23e01c8dab652c0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -377,9 +377,9 @@
                   urlString = "file:///Users/anna/Documents/projects/PedanMusic/PedanMusic/Services/NetworkManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "408">
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1548">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -394,8 +394,8 @@
             filePath = "PedanMusic/Services/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "FetchImage(from:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -410,8 +410,8 @@
             filePath = "PedanMusic/Services/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "FetchImage(from:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -474,8 +474,8 @@
             filePath = "PedanMusic/Services/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "FetchImage(from:completion:)"
             landmarkType = "7">
          </BreakpointContent>

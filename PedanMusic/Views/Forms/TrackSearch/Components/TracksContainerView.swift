@@ -15,8 +15,10 @@ struct TracksContainerView: View {
         ScrollView {
             LazyVStack {
                 ForEach(tracks) { track in
-                    TrackPreviewView(trackInfo: track)
-                        .environmentObject(searchViewModel)
+                    if case .track = track.processedWrapperType {
+                        TrackPreviewView(trackInfo: track)
+                            .environmentObject(searchViewModel)
+                    }
                 }
             }
             .padding()
